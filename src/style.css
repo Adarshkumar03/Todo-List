@@ -1,0 +1,300 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #db4c3f;
+  padding: 12px 30px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 10px;
+  background-color: #db4c3f;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.subdiv1 div {
+  margin-left: 12px;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #db4c3f;
+  border: none;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 16px;
+  height: 1px;
+  background-color: white;
+  margin: 5px auto;
+  transition: 0.4s;
+}
+
+.home {
+  background-color: #db4c3f;
+}
+
+.fa-home {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.fa-home:hover {
+  background-color: #e27065;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg) translateX(-5px) translateY(4px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg) translateX(-4px) translateY(-4px);
+}
+
+.fa-plus {
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 5px;
+}
+.fa-plus:hover {
+  background-color: #e27065;
+}
+
+aside {
+  background-color: #ededed;
+  padding: 40px 50px;
+  height: 74.7vh;
+  width: 15vw;
+  transition: all 0.4s ease-in-out;
+  display: block;
+}
+
+.inactive {
+  display: none;
+  width: 0;
+}
+
+aside h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+aside .contents {
+  margin-bottom: 18px;
+}
+
+.contents {
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.contents:hover {
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.fa-inbox {
+  font-size: 21px;
+  margin-right: 15px;
+  color: #246fe0;
+}
+
+.fa-calendar-alt {
+  font-size: 21px;
+  margin-right: 17px;
+  color: #058527;
+}
+.fa-tasks {
+  font-size: 21px;
+  margin-right: 17px;
+  color: #8e62d1;
+}
+
+.contents-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.contents-project > * {
+  margin-bottom: 18px;
+}
+
+.contents-project div {
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.contents-project div:hover {
+  background-color: white;
+}
+
+.contents-project ul {
+  margin-left: 27px;
+}
+
+.contents-project ul li > * {
+  margin-left: 10px;
+}
+
+.add-project-button {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.add-project-button:hover {
+  color: #db4c3f;
+}
+
+.add-project-button > * {
+  margin-left: 10px;
+}
+
+.add-project-button .fa-plus {
+  color: black;
+}
+
+.add-project-button .fa-plus:hover {
+  background-color: inherit;
+}
+
+.content {
+  display: flex;
+}
+
+main h1 {
+  padding: 55px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.add-task-form,
+.add-project-form {
+  position: fixed;
+  z-index: 1;
+  min-width: 420px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  transform: scale(0);
+  transition: 0.4s ease;
+}
+
+.add-project-form {
+  top: 35%;
+  left: 35%;
+}
+
+.form-head {
+  border-bottom: 3px solid #db4c3f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-project-form button {
+  margin-left: 150px;
+  margin-bottom: 8px;
+}
+.form-content-project {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.form-content-project input {
+  padding: 5px;
+}
+
+.form-content-project > * {
+  margin-bottom: 10px;
+}
+
+.fa-times {
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.add-task-form {
+  top: 20%;
+  left: 35%;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
+
+.form-input input,
+.form-input select {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.form-input-select {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-task-form button {
+  margin-left: 175px;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}

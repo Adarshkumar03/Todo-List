@@ -1,0 +1,30 @@
+{
+  "name": "Todo-List",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "date-fns": "^2.22.1"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adarshkumar03/Todo-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adarshkumar03/Todo-List/issues"
+  },
+  "homepage": "https://github.com/Adarshkumar03/Todo-List#readme"
+}
